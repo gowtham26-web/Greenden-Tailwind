@@ -14,7 +14,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             width="26" height="26" class="md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -31,53 +31,68 @@
             </li>
         </ul>
     </nav>
+    <!-- side navbar -->
+ <section id="sidenav" class="bg-green-100 fixed z-20  transition-all duration-1000 top-0" style="width: 50%; height: 100vh; right: -50%;">
+    <div class="text-right p-5">
+        <p id="close-nav"   class="inline cursor-pointer">X</p>
+    </div>
+    
+    <ul class="flex flex-col text-gray-500 gap-10 items-center">
+        <li>
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="product.html">Products</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="contact.html">Contacts</a>
+        </li>
+    </ul>
+ </section>
 
 <!-- best seller -->
  <section>
     <div class="text-center">
         <h1 class="text-3xl font-bold m-5">Our products</h1>
-        <input type="text" class="border border-black p-2 m-3 " placeholder="Search for a product"  style="width: 80%;" id="">
-    </div>
-    <div class="p-4 text-center">
-        
-    
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
-            <div>
+        <input id="search" type="text" class="border border-black p-2 m-3 " placeholder="Search for a product"  style="width: 80%;" id="">
+
+        <div id="productcontainer" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div class="text-center">
                 <img src="./images/best seller-1.png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="">
                 <h1>Rose plant</h1>
                 <p>$20</p>
             </div>
-            <div class="">
+            <div class="text-center">
                 <img src="./images/best seller-2.png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="">
                 <h1>Snake plant</h1>
                 <p>$25</p>
             </div>
-            <div class="">
+            <div class="text-center">
                 <img src="./images/best seller-3 (1).png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="">
                 <h1>Rose plant</h1>
                 <p>$30</p>
             </div>
-            <div class="">
+            <div class="text-center">
                 <img src="./images/best seller-4 (1).png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="">
                 <h1>Money plant</h1>
                 <p>$15</p>
             </div>
-            <div>
+            <div class="text-center">
                 <img src="./images/best seller-5.png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="">
                 <h1>lily plant</h1>
                 <p>$50</p>
             </div>
-            <div class="">
+            <div class="text-center">
                 <img src="./images/best seller-6.png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="">
                 <h1>Lemongrass</h1>
                 <p>$10</p>
             </div>
-            <div class="">
+            <div class="text-center">
                 <img src="./images/best seller-7.png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="">
                 <h1>chrishanthum</h1>
                 <p>$40</p>
             </div>
-            <div class="">
+            <div class="text-center">
                 <img src="./images/best seller-8.png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="">
                 <h1>snake plant</h1>
                 <p>$25</p>
@@ -92,5 +107,7 @@
     <p>hurry up to avail our exclusive indoor plants and make your environment plesant as pleased</p>
     <p>@2021 Greenden.com</p>
    </section>  
+   <script src="product.js"></script>
 </body>
+
 </html>
